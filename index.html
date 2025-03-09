@@ -6,6 +6,7 @@
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<title>HPA Planet</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
 
@@ -34,7 +35,69 @@
 	
 	<!-- News section Aaron-->
 	<section class="w-full h-screen">
-		<article class="container"></article>
+		<article class="container mx-auto">
+    		<!-- Swiper Slider -->
+			<div class="swiper">
+				<div class="swiper-wrapper">
+					<!-- Slide 1 -->
+					<div class="swiper-slide">
+						<div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+							<img src="https://source.unsplash.com/400x300/?music,studio" alt="Music Studio" class="rounded-lg w-full h-56 object-cover mb-4">
+							<h2 class="text-xl font-bold mb-2">Music Studio</h2>
+							<p class="text-gray-300 text-sm mb-4">Nurturing talent through training, branding, and marketing to grow their careers.</p>
+							<a href="#" class="text-yellow-400 font-semibold">Read more</a>
+						</div>
+					</div>
+
+					<!-- Slide 2 -->
+					<div class="swiper-slide">
+						<div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+							<img src="https://source.unsplash.com/400x300/?dj,music" alt="Live Music" class="rounded-lg w-full h-56 object-cover mb-4">
+							<h2 class="text-xl font-bold mb-2">Live Music</h2>
+							<p class="text-gray-300 text-sm mb-4">Nurturing talent through training, branding, and marketing to grow their careers.</p>
+							<a href="#" class="text-yellow-400 font-semibold">Read more</a>
+						</div>
+					</div>
+
+					<!-- Slide 3 -->
+					<div class="swiper-slide">
+						<div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+							<img src="https://source.unsplash.com/400x300/?vinyl,record" alt="Vinyl Record" class="rounded-lg w-full h-56 object-cover mb-4">
+							<h2 class="text-xl font-bold mb-2">Vinyl Record</h2>
+							<p class="text-gray-300 text-sm mb-4">Nurturing talent through training, branding, and marketing to grow their careers.</p>
+							<a href="#" class="text-yellow-400 font-semibold">Read more</a>
+						</div>
+					</div>
+
+					<!-- Slide 4 -->
+					<div class="swiper-slide">
+						<div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+							<img src="https://source.unsplash.com/400x300/?vinyl,record" alt="Vinyl Record" class="rounded-lg w-full h-56 object-cover mb-4">
+							<h2 class="text-xl font-bold mb-2">Vinyl Record</h2>
+							<p class="text-gray-300 text-sm mb-4">Nurturing talent through training, branding, and marketing to grow their careers.</p>
+							<a href="#" class="text-yellow-400 font-semibold">Read more</a>
+						</div>
+					</div>
+				</div>
+
+			
+
+				<!-- Navigation Buttons -->
+				<div class="swiper-button-next text-yellow-500"></div>
+				<div class="swiper-button-prev text-yellow-500"></div>
+			</div>
+
+			<div class="text-center">
+				<div class="inline-block mx-auto bg-midgrey h-[10px] rounded-full mt-16 w-[100px] relative">
+					<!-- Pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
+				
+			</div>
+				
+
+    
+		</article>
 	</section>
 	
 	<!-- Contact section -->
@@ -53,5 +116,31 @@
 	</footer>
 
 	<script type="module" src="/src/assets/js/main.js"></script>
+	<!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+		var swiper = new Swiper(".swiper", {
+            slidesPerView: 1,  // Shows 1 slide side by side
+            spaceBetween: 20,  // Space between slides
+            loop: false,  
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+				// renderBullet: function (index, className) {
+				// 	return `<span class="dot swiper-pagination-bullet">${index}</span>`; 
+				// }
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            
+			breakpoints: {
+                1024: { slidesPerView: "auto" },
+                768: { slidesPerView: "auto" },
+                640: { slidesPerView: 1 }
+            }
+        });
+    </script>
 </body>
 </html>

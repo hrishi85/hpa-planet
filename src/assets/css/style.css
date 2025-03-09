@@ -7,3 +7,31 @@ html, body {
     height: 100%;
     background: #1B1B1B;
 }
+
+.swiper-slide {
+    width: 28%;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    /* top: 0;
+    bottom: auto; */
+    position: static;
+    margin-top: -8px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0;
+}
+
+.swiper-pagination-bullet-active{
+    width: 25%;
+    height: 10px;
+    border-radius: 5px;
+    background: #EFCC6E;
+}
+
+@media (min-width: 768px) {
+    .swiper-pagination-bullet-active {
+      width: 50%;
+    }
+  }
