@@ -12,26 +12,27 @@ html, body {
     width: 28%;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
-    /* top: 0;
-    bottom: auto; */
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
     position: static;
-    margin-top: -8px;
+    margin-top: -10px;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0;
 }
 
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet {
     width: 25%;
-    height: 10px;
+    height: 8px;
     border-radius: 5px;
-    background: #EFCC6E;
+    background: #2D2D2D;
+}
+.swiper-pagination-bullet-active  {
+    background: #C59C40;
 }
 
 @media (min-width: 768px) {
-    .swiper-pagination-bullet-active {
-      width: 50%;
+    .swiper-pagination-bullet {
+        width: 50%;
     }
-  }
+}
